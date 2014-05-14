@@ -91,7 +91,6 @@ app.post('/signup', function(req, res) {
       var user = new User({username: username, hash: password});
       user.saveUser();
       util.createSession(req,res,user);
-      // res.redirect('/');  // redirect to links page
     }
   });
 });

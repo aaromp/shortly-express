@@ -10,12 +10,6 @@ var User = db.Model.extend({
     return this.hasMany(Link);
   },
 
-    // var user = new User({username: username, password: password});
-    // console.log(user);
-
-    // res.redirect('/');  // redirect to links page
-
-
   saveUser: function() {
     // set salt
     bcrypt.genSalt(10, function(error, salt) {
